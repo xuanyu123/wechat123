@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>钱包</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="lib/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/box-flex.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/adaptive.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    adaPtive(); //铺页面调用				
+    //页面加载时调用
+    $(function() { direction(); });
+    //用户变化屏幕方向时调用
+    $(window).on('orientationchange', function(e) { direction(); });
+    //调用adaptive
+    function adaPtive(max) { window['adaptive'].desinWidth = 720;
+        window['adaptive'].baseFont = 24;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].maxWidth = max;
+        window['adaptive'].init(); }
+    //判断手机屏幕方向
+    function direction() { if (window.orientation == 90 || window.orientation == -90) { adaPtive(320); return false; } else if (window.orientation == 0 || window.orientation == 180) { adaPtive(); return false; } }
+    </script>
+</head>
+
+<body ontouchstart>
+    <div class="wx-header clearfix flex">
+        <div class="wx-header-left">
+            <a href="#">
+	  				<i class="iconfont icon-zuo"></i>我
+	  			</a>
+        </div>
+        <h1 class="flex-1">钱包</h1>
+        <div class="wx-header-right">
+            <i class="iconfont icon-gengduo" id="show-actions"></i>
+        </div>
+    </div>
+    <div class="weui-msg wallet-main clearfix">
+       <ul class="wallet-control flex flex-pack-justify flex-pack-center">
+           <li class="flex flex-v flex-align-center">
+                <img src="images/wallet_sy.png" class="sy" alt="">
+                <p>收付款</p>
+           </li>
+            <li class="flex flex-v flex-align-center">
+                <img src="images/wallet_change.png" class="cq" alt="">
+                <p>零钱</p>
+                 <em>¥800.58</em>
+           </li>
+            <li class="flex flex-v flex-align-center">
+                <img src="images/wallet_card.png" class="ca" alt="">
+                <p>银行卡</p>
+
+           </li>
+       </ul>
+       <!-- 腾迅服务 -->
+        <div class="weui-cells__title">腾迅服务</div>
+          <div class="weui-grids">
+            <a href="change.html" class="weui-grid js_grid">
+              <div class="weui-grid__icon xyk">
+                <img src="images/wallet_icon_xyk.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                信用卡还款
+              </p>
+            </a>
+            <a href="change.html" class="weui-grid js_grid">
+              <div class="weui-grid__icon pca">
+                <img src="images/wallet_icon_pcz.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                手机充值
+              </p>
+            </a>
+             <a href="change.html" class="weui-grid js_grid">
+              <div class="weui-grid__icon lct">
+                <img src="images/wallet_icon_lct.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                理财通
+              </p>
+            </a>
+             <a href="change.html" class="weui-grid js_grid">
+              <div class="weui-grid__icon sh">
+                <img src="images/wallet_icon_sh.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                生活缴费
+              </p>
+            </a>
+             <a href="" class="weui-grid js_grid">
+              <div class="weui-grid__icon qb">
+                <img src="images/wallet_icon_qb.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                Q币充值
+              </p>
+            </a>
+             <a href="change.html" class="weui-grid js_grid">
+              <div class="weui-grid__icon fw">
+                <img src="images/wallet_icon_fw.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                城市服务
+              </p>
+            </a>
+             <a href="change.html" class="weui-grid js_grid">
+              <div class="weui-grid__icon gy">
+                <img src="images/wallet_icon_gy.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                腾讯公益
+              </p>
+            </a>
+            
+          </div>
+        <!-- 腾迅服务 -->
+         <!-- 限时推广 -->
+          <div class="weui-cells__title">限时推广</div>
+          <div class="weui-grids">
+            <a href="" class="weui-grid js_grid">
+              <div class="weui-grid__icon mb">
+                <img src="images/wallet_icon_mb.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                摩拜单车
+              </p>
+            </a>
+          </div>
+           <!-- 限时推广 -->
+                 <!-- 腾迅服务 -->
+        <div class="weui-cells__title">第三方服务</div>
+          <div class="weui-grids">
+            <a href="" class="weui-grid js_grid">
+              <div class="weui-grid__icon xyk">
+                <img src="images/wallet_icon_xyk.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                信用卡还款
+              </p>
+            </a>
+            <a href="" class="weui-grid js_grid">
+              <div class="weui-grid__icon pca">
+                <img src="images/wallet_icon_pcz.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                手机充值
+              </p>
+            </a>
+             <a href="" class="weui-grid js_grid">
+              <div class="weui-grid__icon lct">
+                <img src="images/wallet_icon_lct.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                理财通
+              </p>
+            </a>
+             <a href="" class="weui-grid js_grid">
+              <div class="weui-grid__icon sh">
+                <img src="images/wallet_icon_sh.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                生活缴费
+              </p>
+            </a>
+             <a href="" class="weui-grid js_grid">
+              <div class="weui-grid__icon qb">
+                <img src="images/wallet_icon_qb.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                Q币充值
+              </p>
+            </a>
+             <a href="" class="weui-grid js_grid">
+              <div class="weui-grid__icon fw">
+                <img src="images/wallet_icon_fw.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                城市服务
+              </p>
+            </a>
+             <a href="" class="weui-grid js_grid">
+              <div class="weui-grid__icon gy">
+                <img src="images/wallet_icon_gy.png" alt="">
+              </div>
+              <p class="weui-grid__label">
+                腾讯公益
+              </p>
+            </a>
+            
+          </div>
+        <!-- 腾迅服务 -->
+    </div>
+
+    
+    <script type="text/javascript" src="js/jquery-weui.min.js"></script>
+    <script src="lib/fastclick.js"></script>
+
+    <script>
+    $(function() {
+        FastClick.attach(document.body);
+         $(document).on("click", "#show-actions", function() {
+            $.actions({           
+              onClose: function() {
+                console.log("close");
+              },
+              actions: [
+                {
+                  text: "交易记录",
+                 
+                  onClick: function() {
+                    $.alert("交易记录");
+                  }
+                },
+                {
+                  text: "支付管理",
+               
+                  onClick: function() {
+                    $.alert("你选择了“支付管理”");
+                  }
+                },
+                {
+                  text: "支付安全",
+                 
+                  onClick: function() {
+                    $.alert("你选择了“支付安全”");
+                  }
+                },
+                {
+                  text: "帮助中心",
+                 
+                  onClick: function() {
+                    $.alert("你选择了“帮助中心”");
+                  }
+                }
+              ]
+            });
+          });
+    });
+    </script>
+   
+</body>
+
+</html>

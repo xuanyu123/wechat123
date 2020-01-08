@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>资讯</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="lib/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/box-flex.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="js/adaptive.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    adaPtive(); //铺页面调用             
+    //页面加载时调用
+    $(function() { direction(); });
+    //用户变化屏幕方向时调用
+    $(window).on('orientationchange', function(e) { direction(); });
+    //调用adaptive
+    function adaPtive(max) {
+        window['adaptive'].desinWidth = 720;
+        window['adaptive'].baseFont = 24;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].maxWidth = max;
+        window['adaptive'].init();
+    }
+    //判断手机屏幕方向
+    function direction() { if (window.orientation == 90 || window.orientation == -90) { adaPtive(320); return false; } else if (window.orientation == 0 || window.orientation == 180) { adaPtive(); return false; } }
+    </script>
+</head>
+
+<body ontouchstart>
+    <div class="wx-header clearfix flex">
+        <h1 class="flex-1">我</h1>
+        <div class="wx-header-right" id="showMoreLink">
+            <i class="iconfont icon-jia"></i>
+        </div>
+    </div>
+    <!--me-main -->
+    <div class="weui-msg info-main clearfix">
+        <div class="info-silder clearfix">
+            <div class="swiper-container">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/swiper_banner.jpg" /></div>
+                    <div class="swiper-slide"><img src="images/swiper_banner.jpg" /></div>
+                    <div class="swiper-slide"><img src="images/swiper_banner.jpg" /></div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+        </div>
+         <!-- weui-tab -->
+         <div class="weui-tab">
+              <div class="weui-navbar">
+                    <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                      今日头条
+                    </a>
+                    <a class="weui-navbar__item" href="#tab2">
+                      前瞻
+                    </a>
+                    <a class="weui-navbar__item" href="#tab3">
+                      动态
+                    </a>
+                    <a class="weui-navbar__item" href="#tab4">
+                      综合
+                    </a>
+              </div>
+              <div class="weui-tab__bd">
+                <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                    <div class="weui-panel__bd">
+                      <a href="actile.html" class="weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd">
+                          <img class="weui-media-box__thumb" src="images/info_banner_img.jpg" alt="">
+                        </div>
+                        <div class="weui-media-box__bd flex flex-v ">
+                          <h4 class="weui-media-box__title">1111等不到网彩重启 又有一家公司无奈退出市场</h4>
+                          <p class="weui-media-box__desc"> 2017年8月31日，百度彩票官网首页发布一则公告，“经过两年多等待，国家对互联网彩票的政策依然尚</p>
+                        </div>
+                      </a>
+                        <ul class="info-ul">
+                            <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="tab2" class="weui-tab__bd-item">
+                  <div class="weui-panel__bd">
+                      <a href="actile.html" class="weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd">
+                          <img class="weui-media-box__thumb" src="images/info_banner_img.jpg" alt="">
+                        </div>
+                        <div class="weui-media-box__bd flex flex-v ">
+                          <h4 class="weui-media-box__title">222等不到网彩重启 又有一家公司无奈退出市场</h4>
+                          <p class="weui-media-box__desc"> 2017年8月31日，百度彩票官网首页发布一则公告，“经过两年多等待，国家对互联网彩票的政策依然尚</p>
+                        </div>
+                      </a>
+                        <ul class="info-ul">
+                            <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="tab3" class="weui-tab__bd-item">
+                  <div class="weui-panel__bd">
+                      <a href="actile.html" class="weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd">
+                          <img class="weui-media-box__thumb" src="images/info_banner_img.jpg" alt="">
+                        </div>
+                        <div class="weui-media-box__bd flex flex-v ">
+                          <h4 class="weui-media-box__title">3333等不到网彩重启 又有一家公司无奈退出市场</h4>
+                          <p class="weui-media-box__desc"> 2017年8月31日，百度彩票官网首页发布一则公告，“经过两年多等待，国家对互联网彩票的政策依然尚</p>
+                        </div>
+                      </a>
+                        <ul class="info-ul">
+                            <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="tab4" class="weui-tab__bd-item">
+                  <div class="weui-panel__bd">
+                      <a href="actile.html" class="weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd">
+                          <img class="weui-media-box__thumb" src="images/info_banner_img.jpg" alt="">
+                        </div>
+                        <div class="weui-media-box__bd flex flex-v ">
+                          <h4 class="weui-media-box__title">444等不到网彩重启 又有一家公司无奈退出市场</h4>
+                          <p class="weui-media-box__desc"> 2017年8月31日，百度彩票官网首页发布一则公告，“经过两年多等待，国家对互联网彩票的政策依然尚</p>
+                        </div>
+                      </a>
+                        <ul class="info-ul">
+                            <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                             <li>
+                               <a href="#"><p>【博彩技巧】巧用百家乐投注法，教你 <span>2017-09-24</span></p></a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- weui-tab -->
+        <!-- moreLink -->
+        <div class="moreLink">
+            <ul class="morelink-ul">
+                <li><a href=""><img src="images/moreLink_msg.png" alt=""><p>发起群聊</p></a></li>
+                <li><a href=""><img src="images/moreLink_add.png" alt=""><p>添加朋友</p></a></li>
+                <li><a href=""><img src="images/moreLink_sys.png" alt=""><p>扫一扫</p></a></li>
+                <li><a href=""><img src="images/moreLink_pay.png" alt=""><p>收付款</p></a></li>
+            </ul>
+        </div>
+        <!-- moreLink -->
+    </div>
+    <!--me-main -->
+    <!--  weui-tabbar -->
+    <div class="weui-tabbar">
+        <a href="index.html" class="weui-tabbar__item">
+            <!--   <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span> -->
+            <div class="weui-tabbar__icon wj">
+                <img src="images/tarbar_earth.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">无界</p>
+        </a>
+        <a href="task.html" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon rw">
+                <img src="images/tarbar_rw.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">任务</p>
+        </a>
+        <a href="info.html" class="weui-tabbar__item  weui-bar__item--on">
+            <div class="weui-tabbar__icon zx">
+                <img src="images/tarbar_zx_on.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">资讯</p>
+        </a>
+        <a  href="me.html" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon me">
+                <img src="./images/tarbar_me.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">我</p>
+        </a>
+    </div>
+    <!--  weui-tabbar -->
+    
+    <script src="lib/fastclick.js"></script>
+    <script type='text/javascript' src='js/swiper.js' charset='utf-8'></script>
+    <script>
+    $(function() {
+        FastClick.attach(document.body);
+        $("#showMoreLink").on('click',function(){
+            $(".moreLink").toggle("fast");
+        });
+              $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+      });
+    });
+    </script>
+    <script src="js/jquery-weui.js"></script>
+</body>
+
+</html>
